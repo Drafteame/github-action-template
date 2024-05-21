@@ -1,10 +1,11 @@
+import core from '@actions/core';
 
 export default class Action {
   constructor(action) {
-    this.action = action
+    this.action = action;
   }
 
   run() {
-    console.log(`Perform ${action} action...`)
+    core.info(`Perform ${action} action...`);
   }
 }

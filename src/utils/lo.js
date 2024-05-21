@@ -9,15 +9,15 @@ export function isEmpty(value) {
     return true;
   }
 
-  if (typeof value === "boolean") {
+  if (typeof value === 'boolean') {
     return false;
   }
 
-  if (typeof value === "number" && value != 0) {
+  if (typeof value === 'number' && value != 0) {
     return false;
   }
 
-  if (typeof value === "string") {
+  if (typeof value === 'string') {
     return value.trim().length === 0;
   }
 
